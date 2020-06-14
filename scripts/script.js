@@ -6,13 +6,21 @@ tl = gsap.timeline({
   duration:28,
   x:"25vw",
   ease: "sine.out"
-}).to(".plane", {
+},"start").to("body", { //#727272
+  duration:28,
+  background: "#727272",
+  ease: "sine.out"
+},"start").to(".plane", {
   duration:10,
   rotation: -30,
   x:"50vw",
   bottom:"45vh",
   ease: "sine.out"
-}).to(".plane", {
+},"takeoff").to("body", { //#727272
+  duration:10,
+  background: "#000000",
+  ease: "sine.out"
+},"takeoff").to(".plane", {
   duration:7,
   rotation: 0,
   bottom:"50vh",
