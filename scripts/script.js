@@ -1,36 +1,40 @@
 
 
-tl = gsap.timeline({ paused: true })
-.to(".plane", {duration:1, left:200, ease: "power2.out"})
-.to(".plane", {duration:44, rotation: -30, left:700, bottom:500, ease: "power2.out"})
-
-gsap.ticker.fps(30)
+tl = gsap.timeline({
+   paused: true
+ }).to(".plane", {
+  duration:28,
+  x:"25vw",
+  ease: "sine.out"
+}).to(".plane", {
+  duration:10,
+  rotation: -30,
+  x:"50vw",
+  bottom:"45vh",
+  ease: "sine.out"
+}).to(".plane", {
+  duration:7,
+  rotation: 0,
+  bottom:"50vh",
+  x:"80vw",
+  ease: "sine.out"
+})
 
 var aud = document.getElementById("audio");
-
 
 function Update() {
   var currentTime = aud.currentTime;
   var duration = aud.duration;
-  tl.time((currentTime));
+  tl.time(currentTime)
 }
 
 aud.ontimeupdate = function(){
     Update()
 };
-/*
-setInterval(() => { // animation move and resize the logo to the very left top
-Update()
-}, 100);
 
-/*
-aud.addEventListener("timeupdate", function() {
-Update()
-});
-*/
 aud.onplay = function() {
-  Update()
+  tl.play()
 };
 aud.onpause = function() {
-  Update()
+  tl.pause();
 };
