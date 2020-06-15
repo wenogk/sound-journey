@@ -1,3 +1,4 @@
+
 .plane {
   position: absolute;
   bottom: 0;
@@ -11,6 +12,7 @@ audio {
 
 .contentHolder {
   margin: 0;
+  width:100vw;
 }
 
 .visuals {
@@ -23,6 +25,36 @@ audio {
   height: 53.3vh;
   width: 80vh;
 }
+
+.v-center {
+   display: flex;
+   align-items: center;
+}
+.playerHolder {
+  padding:15px;
+}
+.playPauseButton:hover {
+  cursor: pointer;
+}
+.playPauseButtonHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mask1 { /* 155 x 737 dimensions of the image*/
+  position:absolute;
+  top: -800px;
+  left:0px;
+
+}
+
+.mask2 { /* 155 x 737 dimensions of the image*/
+  position:absolute;
+  top: -800px;
+  right:0px;
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     width:100vw;
@@ -37,25 +69,7 @@ audio {
     height: 53.3vw;
     width: 80vw;
   }
-}
-.v-center {
-   display: flex;
-   align-items: center;
-}
-
-.playPauseButton:hover {
-  cursor: pointer;
-}
-
-.mask1 { /* 155 x 737 dimensions of the image*/
-  position:absolute;
-  top: -800px;
-  left:0px;
-
-}
-
-.mask2 { /* 155 x 737 dimensions of the image*/
-  position:absolute;
-  top: -800px;
-  right:0px;
+  .playPauseButtonHolder {
+    text-align: center !important;
+  }
 }
