@@ -1,30 +1,22 @@
 let paused = true;
-
+//214 seconds total
 tl = gsap.timeline({
    paused: true
- }).to(".plane", {
-  duration:28,
-  x:"25vw",
-  ease: "sine.out"
-},"start").to("body", { //#727272
-  duration:28,
-  background: "#727272",
-  ease: "sine.out"
-},"start").to(".plane", {
-  duration:10,
-  rotation: -30,
-  x:"50vw",
-  bottom:"45vh",
-  ease: "sine.out"
-},"takeoff").to("body", { //#727272
-  duration:10,
-  background: "#000000",
-  ease: "sine.out"
-},"takeoff").to(".plane", {
-  duration:7,
-  rotation: 0,
-  bottom:"50vh",
-  x:"80vw",
+ })
+ .to("body", { //#727272
+  duration:1,
+  background: "#90EE90",
+  ease: "sine.out",
+  delay:4
+},"announcement1")
+.to("body", { //#727272
+ duration:2,
+ background: "white",
+ ease: "sine.out"
+},"announcementEnd")
+.to("body", {
+  duration:210,
+  background: "black",
   ease: "sine.out"
 })
 
@@ -46,22 +38,30 @@ wavesurfer.on('seek', function () {
 wavesurfer.on('play', function () {
   tl.play()
 });
+wavesurfer.on('ready', function () {
+  $('.playPauseButton').click(function(){
+    paused = !paused;
+    if(paused) {
+      $(".playPauseButton").attr("src","assets/play.png");
+    } else {
+      $(".playPauseButton").attr("src","assets/pause.png");
+    }
+    wavesurfer.playPause();
+  });
 
-$('.playPauseButton').click(function(){
-  paused = !paused;
-  if(paused) {
-    $(".playPauseButton").attr("src","assets/play.png");
-  } else {
-    $(".playPauseButton").attr("src","assets/pause.png");
-  }
-  wavesurfer.playPause();
+  $('body').keyup(function(e){
+     if(e.keyCode == 32){
+        paused = !paused;
+        if(paused) {
+            $(".playPauseButton").attr("src","assets/play.png");
+          } else {
+            $(".playPauseButton").attr("src","assets/pause.png");
+          }
+         wavesurfer.playPause();
+     }
+  });
 });
 
-$('body').keyup(function(e){
-   if(e.keyCode == 32){
-       wavesurfer.playPause();
-   }
-});
   function shake(element=".visuals"){
   gsap.to(element, .1, {
     x: -7,
