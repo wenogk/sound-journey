@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="about.css">
+    <title>Info</title>
+  </head>
+
+  <body>
+    
+
+     
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand" title="Go Back">Main Page</a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto" >
+                <li class="nav-item">
+                    <a href="#background1" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#background2" class="nav-link">Creators</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#background3" class="nav-link">Connect</a>
+                </li>
+                
+            </ul>
+        </div>
+
+    </nav>
+
+    <a href="#"> <button id="myBtn" title="Go to top">Top</button> </a>
+    <div class="content0" id="background1">
+       
+        <div>
+            <h1 class="#background1"> About  </h1>
+
+            <p>
+                This website is an interactive 8D audio experience of a turbulent flight. 
+            </p>
+            <p>
+                The surround sound effect makes the user experience immersive. An emphasis is placed on the auditory senses whilst ensuring that the visuals do not dominate as much. This was done by creating a minimalistic website with enough features to allow intuitive access to the user. The visuals were curated with the sole purpose of "complementing" the audio rather than narrate the entire story by itself. This is the reason why the passengers' faces were not shown, so as not to allow the user to focus their attention to any characters. The 8D aspect also reels the user into focusing more on the audio. The same auditory focus was carried onto the "About" page by incorporating an audio equivalent of a "screenscrab" of the cast.
+            </p>
+
+        </div>
+    </div>
+     <div class="content" id="background2">
+        
+        <div>
+            <h1 class="sub-heading"> Creators </h1>
+            <p>
+                <div class="thirdpage">
+                    <img onmouseover="PlaySound('audio1')" onmouseout="StopSound('audio1')" id="Kat1" src="images/Face1.jpg" class="pics" >
+
+                    <img onmouseover="PlaySound('audio2')" onmouseout="StopSound('audio2')" id="Rom1" src="images/Face2.png" class="pics" >
+
+                    <img onmouseover="PlaySound('audio3')" onmouseout="StopSound('audio3')" id="Yah1" src="images/Face3.png" class="pics" >
+                    
+                    <img id="Yas1" src="images/Face4.png" class="pics" >
+
+
+                    <audio id='audio1' src='Audio/Yas.mp3'/>
+                    <audio id='audio2' src='Audio/Rom.mp3'/>
+                    <audio id='audio3' src='Audio/Yah.mp3'/>
+                    <!-- <audio id='audio4' src='Audio/Yas.mp3'/> -->
+            
+                    
+                </div>
+                
+            </p>
+        
+
+        </div>
+    </div>
+    <div class="content" id="background3">
+        
+        <div>
+            <h1 class="sub-heading"> Connect <h1>
+
+            <p>
+                <a href="https://www.facebook.com/NYUAD/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/NYUAbuDhabi?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/nyuabudhabi/?hl=en" class="fa fa-instagram"></a>
+            </p>
+        </div>
+    </div>
+
+    
+   <script src="about.js"></script>
+  </body>
+</html>
