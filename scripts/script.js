@@ -93,7 +93,7 @@ wavesurfer.on('ready', function () {
   });
 });
 
-  function shake(element=".visuals"){
+  function shake(element="body"){
   gsap.to(element, .1, {
     x: -7,
     ease: Quad.easeInOut
@@ -107,6 +107,6 @@ wavesurfer.on('ready', function () {
   });
   gsap.to(element, .1, {
     x: 0,
-    delay: .1 * 10
+    delay: .1 * 11
   });
 }
