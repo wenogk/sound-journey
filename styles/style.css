@@ -32,14 +32,14 @@ audio {
   cursor: pointer;
 }
 
-.mask1 {
+.mask1 { /* 155 x 737 dimensions of the image*/
   position:absolute;
   top: -800px;
   left:0px;
 
 }
 
-.mask2 {
+.mask2 { /* 155 x 737 dimensions of the image*/
   position:absolute;
   top: -800px;
   right:0px;
