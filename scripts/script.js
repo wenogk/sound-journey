@@ -50,7 +50,48 @@ tl = gsap.timeline({
   background: "black",
   ease: "sine.out"
 },106)
-
+.to("body", {
+  duration:0.5,
+  yoyo: true,
+  repeat: 76,
+  rotate: "+=3",
+  ease: Quad.easeInOut
+},112,"shake")
+.to("body", {
+  duration:0.5,
+  yoyo: true,
+  repeat: 76,
+  rotate: "-=3",
+  ease: Quad.easeInOut
+},112,"shake")
+.to("body", {
+  duration:0.3,
+  yoyo: true,
+  repeat: 70,
+  rotate: "+=5",
+  ease: Quad.easeInOut
+},150,"shake2")
+.to("body", { //2:30 150
+  duration:0.3,
+  yoyo: true,
+  repeat: 70,
+  rotate: "-=5",
+  ease: Quad.easeInOut
+},150,"shake2")
+.to("body", {
+  duration:0.1,
+  yoyo: true,
+  repeat: 58,
+  rotate: "+=5",
+  ease: Quad.easeInOut
+},185,"shake3")
+.to("body", { //2:30 150
+  duration:0.1,
+  yoyo: true,
+  repeat: 58,
+  rotate: "-=5",
+  ease: Quad.easeInOut
+},185,"shake3")
 var wavesurfer = WaveSurfer.create({
     container: '#waveform',
     waveColor: '#ccc',
