@@ -57,6 +57,11 @@ $('.playPauseButton').click(function(){
   wavesurfer.playPause();
 });
 
+$('body').keyup(function(e){
+   if(e.keyCode == 32){
+       wavesurfer.playPause();
+   }
+});
   function shake(element=".visuals"){
   gsap.to(element, .1, {
     x: -7,
