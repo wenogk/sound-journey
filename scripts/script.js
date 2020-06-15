@@ -33,7 +33,7 @@ var wavesurfer = WaveSurfer.create({
     waveColor: '#ccc',
     progressColor: '#343B3F'
 });
-wavesurfer.load('assets/plane.mp3');
+wavesurfer.load('assets/draft.mp3');
 wavesurfer.on('pause', function () {
   tl.pause();
 });
@@ -56,3 +56,21 @@ $('.playPauseButton').click(function(){
   }
   wavesurfer.playPause();
 });
+
+  function shake(element=".visuals"){
+  gsap.to(element, .1, {
+    x: -7,
+    ease: Quad.easeInOut
+  });
+  gsap.to(element, .1, {
+    repeat: 10,
+    x: 7,
+    yoyo: true,
+    delay: .1,
+    ease: Quad.easeInOut
+  });
+  gsap.to(element, .1, {
+    x: 0,
+    delay: .1 * 10
+  });
+}
