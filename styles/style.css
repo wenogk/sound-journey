@@ -31,10 +31,7 @@ audio {
    align-items: center;
 }
 .playerHolder {
-  position: fixed;
-Width: 100%;
-bottom: 0;
-  padding:50px;
+  padding:20px;
 }
 .playPauseButton:hover {
   cursor: pointer;
@@ -60,7 +57,7 @@ bottom: 0;
 
 @media only screen and (max-width: 600px) {
   .container {
-    width:100vw; 
+    width:100vw;
   }
   .visuals {
     margin-top:15px;
@@ -76,6 +73,7 @@ bottom: 0;
 
   .playerHolder {
     padding:5px;
+    text-align: center !important;
   }
 
   .playPauseButtonHolder {
