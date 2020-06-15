@@ -31,7 +31,7 @@ audio {
    align-items: center;
 }
 .playerHolder {
-  padding:15px;
+  padding:50px;
 }
 .playPauseButton:hover {
   cursor: pointer;
@@ -69,6 +69,11 @@ audio {
     height: 53.3vw;
     width: 80vw;
   }
+
+  .playerHolder {
+    padding:5px;
+  }
+
   .playPauseButtonHolder {
     text-align: center !important;
   }
