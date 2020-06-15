@@ -1,5 +1,6 @@
 let paused = true;
 //214 seconds total
+//1:44 thunder - 104
 tl = gsap.timeline({
    paused: true
  })
@@ -7,18 +8,32 @@ tl = gsap.timeline({
   duration:1,
   background: "#90EE90",
   ease: "sine.out",
-  delay:4
-},"announcement1")
+},4)
 .to("body", { //#727272
  duration:2,
  background: "white",
  ease: "sine.out"
-},"announcementEnd")
+},5)
 .to("body", {
-  duration:210,
+  duration:0.4,
   background: "black",
-  ease: "sine.out"
-})
+  ease: "steps(3)"
+},104)
+.to("body", {
+  duration:0.6,
+  background: "white",
+  ease: "steps(3)"
+},104.4)
+.to("body", {
+  duration:0.4,
+  background: "black",
+  ease: "steps(3)"
+},105)
+.to("body", {
+  duration:0.6,
+  background: "white",
+  ease: "steps(3)"
+},105.4)
 
 var wavesurfer = WaveSurfer.create({
     container: '#waveform',
