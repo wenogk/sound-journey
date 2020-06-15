@@ -35,6 +35,16 @@ tl = gsap.timeline({
   background: "white",
   ease: "steps(3)"
 },105.4)
+.to(".mask1", {
+  duration:2,
+  top:"0px",
+  ease: Bounce.easeOut
+},108)
+.to(".mask2", {
+  duration:2,
+  top:"0px",
+  ease: Bounce.easeOut
+},108)
 .to("body", {
   duration:(totalSeconds-106),
   background: "black",

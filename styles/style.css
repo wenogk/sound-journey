@@ -31,3 +31,16 @@ audio {
 .playPauseButton:hover {
   cursor: pointer;
 }
+
+.mask1 {
+  position:absolute;
+  top: -800px;
+  left:0px;
+
+}
+
+.mask2 {
+  position:absolute;
+  top: -800px;
+  right:0px;
+}
