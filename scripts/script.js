@@ -1,4 +1,4 @@
-
+let paused = true;
 
 tl = gsap.timeline({
    paused: true
@@ -28,32 +28,31 @@ tl = gsap.timeline({
   ease: "sine.out"
 })
 
-var aud = document.getElementById("audio");
-
-function Update() {
-  var currentTime = aud.currentTime;
-  var duration = aud.duration;
-  tl.time(currentTime)
-}
-
 var wavesurfer = WaveSurfer.create({
     container: '#waveform',
     waveColor: '#ccc',
     progressColor: '#343B3F'
 });
 wavesurfer.load('assets/plane.mp3');
-
-wavesurfer.on('ready', function () {
-
+wavesurfer.on('pause', function () {
+  tl.pause();
 });
 
-aud.ontimeupdate = function(){
-    Update()
-};
-
-aud.onplay = function() {
+wavesurfer.on('seek', function () {
+  let time = wavesurfer.getCurrentTime();
+  tl.time(time)
+});
+// seek
+wavesurfer.on('play', function () {
   tl.play()
-};
-aud.onpause = function() {
-  tl.pause();
-};
+});
+
+$('.playPauseButton').click(function(){
+  paused = !paused;
+  if(paused) {
+    $(".playPauseButton").attr("src","assets/play.png");
+  } else {
+    $(".playPauseButton").attr("src","assets/pause.png");
+  }
+  wavesurfer.playPause();
+});

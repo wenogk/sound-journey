@@ -22,3 +22,12 @@ audio {
   max-width: 100%;
   cursor: pointer;
 }
+
+.v-center {
+   display: flex;
+   align-items: center;
+}
+
+.playPauseButton:hover {
+  cursor: pointer;
+}
