@@ -36,6 +36,17 @@ function Update() {
   tl.time(currentTime)
 }
 
+var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: '#ccc',
+    progressColor: '#343B3F'
+});
+wavesurfer.load('assets/plane.mp3');
+
+wavesurfer.on('ready', function () {
+
+});
+
 aud.ontimeupdate = function(){
     Update()
 };
