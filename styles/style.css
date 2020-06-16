@@ -4,6 +4,7 @@ html, body {
     z-index: 1;*/
     max-height: 100%;
       overflow-y: hidden;
+      background: black;
 }
 body {
   /* background: url("/assets/passengers_hd.jpg");
@@ -129,7 +130,6 @@ audio {
       overflow-x: hidden;
       max-height: auto;
       overflow-y:auto;
-      background: black;
   }
   .container {
     width:100vw;

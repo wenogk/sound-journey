@@ -71,6 +71,12 @@ ease: "sine.out"
   background: "black",
   ease: "sine.out"
 },148)
+.to("body", { //#727272
+duration:1,
+rotate: "0",
+transformOrigin: '50% 20%',
+ease: "sine.out"
+},204)
 .to("#overlay", {
   backgroundImage:"linear-gradient(to right, #2500E0, #000, #E31E33)",
   yoyo: true,
