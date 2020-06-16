@@ -78,6 +78,34 @@ ease: "sine.out"
   repeat: 7
 
 },205)
+.to(".mainBg", {
+  duration: 0.5,
+  filter: "brightness(0%)",
+},210)
+.to(".mask1", {
+  duration: 0.5,
+  opacity: 0,
+},210)
+.to(".mask2", {
+  duration: 0.5,
+  opacity:0,
+},210)
+.to("#overlay", { //#727272
+duration:2,
+backgroundImage:"linear-gradient(to right, #000, #000, #000)",
+ease: "sine.out"
+},212)
+.to("#overlay", { //#727272
+duration:3,
+background: "rgba(0,0,0,0)",
+ease: "sine.out"
+},214)
+.to("body", { //#727272
+duration:3,
+rotate: "0",
+transformOrigin: '50% 20%',
+ease: "sine.out"
+},214)
 
 
 var wavesurfer = WaveSurfer.create({
