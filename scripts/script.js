@@ -204,6 +204,10 @@ wavesurfer.on('ready', function () {
     }
     wavesurfer.playPause();
   });
+  wavesurfer.on('finish', function () {
+      paused = true;
+      $(".playPauseButton").attr("src","assets/play.png");
+    });
 
   $('body').keyup(function(e){
      if(e.keyCode == 32){
