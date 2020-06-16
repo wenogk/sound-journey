@@ -95,7 +95,8 @@ tl = gsap.timeline({
 var wavesurfer = WaveSurfer.create({
     container: '#waveform',
     waveColor: '#ccc',
-    progressColor: '#343B3F'
+    progressColor: '#343B3F',
+    responsive: true
 });
 wavesurfer.load('assets/draft.mp3');
 wavesurfer.on('pause', function () {
