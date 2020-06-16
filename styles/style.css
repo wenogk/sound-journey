@@ -92,7 +92,10 @@ audio {
   right:0;
 }
 .playerHolder {
-  padding:20px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:0px;
+  padding-bottom:0px;
 }
 
 .playPauseButton {
