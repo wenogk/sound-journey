@@ -67,15 +67,17 @@ ease: "sine.out"
   ease: Bounce.easeOut
 },108)
 .to("#overlay", { //fade to black
-  duration:(210-148),
+  duration:(205-148),
   background: "black",
   ease: "sine.out"
 },148)
 .to("#overlay", {
   backgroundImage:"linear-gradient(to right, #2500E0, #000, #E31E33)",
   yoyo: true,
-  repeat: 10
-},210)
+  duration: 0.5,
+  repeat: 15
+
+},205)
 
 
 var wavesurfer = WaveSurfer.create({
