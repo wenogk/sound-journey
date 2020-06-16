@@ -74,8 +74,8 @@ ease: "sine.out"
 .to("#overlay", {
   backgroundImage:"linear-gradient(to right, #2500E0, #000, #E31E33)",
   yoyo: true,
-  duration: 0.5,
-  repeat: 15
+  duration: 1,
+  repeat: 7
 
 },205)
 
