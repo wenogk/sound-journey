@@ -29,9 +29,12 @@ p {
 }
 */
 img{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 35%;
     height: auto;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 .content0{
     padding-top: 4%;
@@ -80,12 +83,13 @@ img{
 	text-align: center;
 
 }
-.pics{
+/*.pics{
 	margin-left: 1%;
-	/*border: 2px solid black;*/
-	width: 480px;
-	height: 650px;
-}
+	border: 2px solid black;
+	width: 360px;
+	height: 488px;
+}*/
+
 .content p{
     text-align: center;
 }
