@@ -67,10 +67,10 @@ ease: "sine.out"
   ease: Bounce.easeOut
 },108)
 .to("#overlay", { //fade to black
-  duration:(totalSeconds-106),
+  duration:(totalSeconds-148),
   background: "black",
   ease: "sine.out"
-},106)
+},148)
 
 
 var wavesurfer = WaveSurfer.create({
@@ -81,10 +81,10 @@ var wavesurfer = WaveSurfer.create({
 });
 
 function turbulence(startTime,endTime,speed,angle) {
-  let repeat = Math.ceil((endTime - startTime) / speed);
+  let repeat = Math.round((endTime - startTime) / speed);
   let amountAdd = "+=" + angle;
   let amountSubtract = "-=" + angle;
-  let startTime2 = startTime + speed;
+  let startTime2 = startTime //+ speed;
   let srotate = "rotate(-" + angle + "deg);"
   console.log(startTime + " to " + endTime + " repeat " + repeat + " times for duration " + speed )
   tl.to("body", {
