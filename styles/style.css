@@ -65,7 +65,7 @@ audio {
 .mainBg {
   position fixed;
   width: 100vw; /* Full width (cover the whole page) */
-  height: 100vh; /* Full height (cover the whole page) */
+  height: 80vh; /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
@@ -87,9 +87,15 @@ audio {
 .playerHolder {
   padding:20px;
 }
+
+.playPauseButton {
+  max-width: 50px;
+}
+
 .playPauseButton:hover {
   cursor: pointer;
 }
+
 .playPauseButtonHolder {
   display: flex;
   justify-content: center;
