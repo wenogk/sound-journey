@@ -129,9 +129,13 @@ audio {
       overflow-x: hidden;
       max-height: auto;
       overflow-y:auto;
+      background: black;
   }
   .container {
     width:100vw;
+  }
+  .mainBg {
+    margin-top:100px;
   }
   .visuals {
     margin-top:15px;
