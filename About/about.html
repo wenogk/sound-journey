@@ -13,40 +13,40 @@
   </head>
 
   <body>
-    
 
-     
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a href="index.html" class="navbar-brand" title="Go Back">Main Page</a>
 
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav ml-auto" >
-                <li class="nav-item">
-                    <a href="#background1" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#background2" class="nav-link">Creators</a>
-                </li>
-                 <li class="nav-item">
-                    <a href="#background3" class="nav-link">Connect</a>
-                </li>
-                
-            </ul>
-        </div>
 
-    </nav>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+   <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+       <ul class="navbar-nav mr-auto">
+
+       </ul>
+   </div>
+
+   <div class="mx-auto order-0">
+       <a class="navbar-brand mx-auto" href="../index.html">SULLY 2.0</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+   </div>
+   <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+       <ul class="navbar-nav ml-auto">
+           <li class="nav-item">
+               <a class="nav-link" href="About/about.html">About</a>
+           </li>
+       </ul>
+   </div>
+  </nav>
 
     <a href="#"> <button id="myBtn" title="Go to top">Top</button> </a>
     <div class="content0" id="background1">
-       
+
         <div>
             <h1 class="#background1"> About  </h1>
 
             <p>
-                This website is an interactive 8D audio experience of a turbulent flight. 
+                This website is an interactive 8D audio experience of a turbulent flight.
             </p>
             <p>
                 The surround sound effect makes the user experience immersive. An emphasis is placed on the auditory senses whilst ensuring that the visuals do not dominate as much. This was done by creating a minimalistic website with enough features to allow intuitive access to the user. The visuals were curated with the sole purpose of "complementing" the audio rather than narrate the entire story by itself. This is the reason why the passengers' faces were not shown, so as not to allow the user to focus their attention to any characters. The 8D aspect also reels the user into focusing more on the audio. The same auditory focus was carried onto the "About" page by incorporating an audio equivalent of a "screenscrab" of the cast.
@@ -55,7 +55,7 @@
         </div>
     </div>
      <div class="content" id="background2">
-        
+
         <div>
             <h1 class="sub-heading"> Creators </h1>
             <p>
@@ -65,7 +65,7 @@
                     <img onmouseover="PlaySound('audio2')" onmouseout="StopSound('audio2')" id="Rom1" src="images/Face2.png" class="pics" >
 
                     <img onmouseover="PlaySound('audio3')" onmouseout="StopSound('audio3')" id="Yah1" src="images/Face3.png" class="pics" >
-                    
+
                     <img id="Yas1" src="images/Face4.png" class="pics" >
 
 
@@ -73,17 +73,17 @@
                     <audio id='audio2' src='Audio/Rom.mp3'/>
                     <audio id='audio3' src='Audio/Yah.mp3'/>
                     <!-- <audio id='audio4' src='Audio/Yas.mp3'/> -->
-            
-                    
+
+
                 </div>
-                
+
             </p>
-        
+
 
         </div>
     </div>
     <div class="content" id="background3">
-        
+
         <div>
             <h1 class="sub-heading"> Connect <h1>
 
@@ -95,7 +95,7 @@
         </div>
     </div>
 
-    
+
    <script src="about.js"></script>
   </body>
 </html>
