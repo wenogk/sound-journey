@@ -1,4 +1,33 @@
-
+body {
+  /* background: url("/assets/passengers_hd.jpg");
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;*/
+ position: relative;
+  min-height: 100%;
+  min-height: 100vh;
+}
+nav {
+  position: absolute !important;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 5;
+}
+#overlay { /* taken from https://www.w3schools.com/howto/howto_css_overlay.asp*/
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-color: rgba(0,0,0,0);
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
 .plane {
   position: absolute;
   bottom: 0;
@@ -11,6 +40,8 @@ audio {
 }
 
 .contentHolder {
+  position: absolute;
+  top:0;
   margin: 0;
   width:100vw;
 }
@@ -25,10 +56,27 @@ audio {
   height: 53.3vh;
   width: 80vh;
 }
+.mainBg {
+  position fixed;
+  width: 100vw; /* Full width (cover the whole page) */
+  height: 100vh; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
+}
 .v-center {
    display: flex;
    align-items: center;
+}
+.playerWrapper {
+  background: white;
+  z-index:3;
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
 }
 .playerHolder {
   padding:20px;
@@ -43,6 +91,7 @@ audio {
 }
 
 .mask1 { /* 155 x 737 dimensions of the image*/
+  z-index: 4;
   position:absolute;
   top: -800px;
   left:0px;
@@ -50,6 +99,7 @@ audio {
 }
 
 .mask2 { /* 155 x 737 dimensions of the image*/
+  z-index: 4;
   position:absolute;
   top: -800px;
   right:0px;

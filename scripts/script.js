@@ -5,34 +5,34 @@ let totalSeconds = 214;
 tl = gsap.timeline({
    paused: true
  })
- .to("body", { //#727272
+ .to("#overlay", { //#727272
   duration:1,
-  background: "#90EE90",
+  background: "rgb(144,238,144,0.7)",
   ease: "sine.out",
 },4)
-.to("body", { //#727272
+.to("#overlay", { //#727272
  duration:2,
- background: "white",
+ background: "rgba(0,0,0,0)",
  ease: "sine.out"
 },5)
-.to("body", {
+.to("#overlay", {
   duration:0.4,
-  background: "black",
+  background: "rgba(0,0,0,0.7)",
   ease: "steps(3)"
 },104)
-.to("body", {
+.to("#overlay", {
   duration:0.6,
-  background: "white",
+  background: "rgba(0,0,0,0)",
   ease: "steps(3)"
 },104.4)
-.to("body", {
+.to("#overlay", {
   duration:0.4,
-  background: "black",
+  background: "rgba(0,0,0,0.7)",
   ease: "steps(3)"
 },105)
-.to("body", {
+.to("#overlay", {
   duration:0.6,
-  background: "white",
+  background: "rgba(0,0,0,0)",
   ease: "steps(3)"
 },105.4)
 .to(".mask1", {
@@ -45,7 +45,7 @@ tl = gsap.timeline({
   top:"0px",
   ease: Bounce.easeOut
 },108)
-.to("body", {
+.to("#overlay", {
   duration:(totalSeconds-106),
   background: "black",
   ease: "sine.out"
@@ -54,14 +54,14 @@ tl = gsap.timeline({
   duration:0.5,
   yoyo: true,
   repeat: 76,
-  rotate: "+=3",
+  transform: "rotate(3deg)",
   ease: Quad.easeInOut
 },112,"shake")
 .to("body", {
   duration:0.5,
   yoyo: true,
   repeat: 76,
-  rotate: "-=3",
+  transform: "rotate(-3deg)",
   ease: Quad.easeInOut
 },112,"shake")
 .to("body", {
