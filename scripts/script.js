@@ -67,10 +67,15 @@ ease: "sine.out"
   ease: Bounce.easeOut
 },108)
 .to("#overlay", { //fade to black
-  duration:(totalSeconds-148),
+  duration:(210-148),
   background: "black",
   ease: "sine.out"
 },148)
+.to("#overlay", {
+  backgroundImage:"linear-gradient(to right, #2500E0, #000, #E31E33)",
+  yoyo: true,
+  repeat: 10
+},210)
 
 
 var wavesurfer = WaveSurfer.create({
@@ -92,7 +97,7 @@ function turbulence(startTime,endTime,speed,angle) {
     yoyo: true,
     repeat: repeat,
     rotate: amountAdd,
-    transformOrigin: '100% 50%',
+    transformOrigin: '50% 20%',
     ease: Quad.easeInOut
   },startTime)
   .to("body", {
@@ -100,7 +105,7 @@ function turbulence(startTime,endTime,speed,angle) {
     yoyo: true,
     repeat: repeat,
     rotate: amountSubtract,
-    transformOrigin: '50% 0%',
+    transformOrigin: '50% 20%',
     ease: Quad.easeInOut
   },startTime2)
   .to(".mask1", {
@@ -139,7 +144,7 @@ function turbulence(startTime,endTime,speed,angle) {
 
 turbulence(112,148,0.5,3);
 turbulence(148,180,0.4,5);
-turbulence(180,197,0.2,5);
+turbulence(180,199,0.2,5);
 wavesurfer.load('assets/final.mp3');
 wavesurfer.on('pause', function () {
   tl.pause();
