@@ -54,16 +54,30 @@ tl = gsap.timeline({
   duration:0.5,
   yoyo: true,
   repeat: 76,
-  transform: "rotate(3deg)",
+  rotate: "+=3",
   ease: Quad.easeInOut
 },112,"shake")
 .to("body", {
   duration:0.5,
   yoyo: true,
   repeat: 76,
-  transform: "rotate(-3deg)",
+  rotate: "-=3",
   ease: Quad.easeInOut
 },112,"shake")
+.to(".mask1", {
+  duration:0.5,
+  yoyo: true,
+  repeat: 76,
+  rotate: "-=5",
+  ease: Quad.easeInOut
+},112,"shakee")
+.to(".mask1", {
+  duration:0.5,
+  yoyo: true,
+  repeat: 76,
+  rotate: "+=5",
+  ease: Quad.easeInOut
+},112,"shakee")
 .to("body", {
   duration:0.3,
   yoyo: true,
