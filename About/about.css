@@ -35,7 +35,13 @@ img{
     padding-bottom: 5%;
     padding-right: 5%;
     padding-left: 5%;
+    cursor: url('https://wenogk.github.io/sound-journey/About/Images/music36.png')
+  }
+
+.pics:hover { 
+  cursor: url('https://wenogk.github.io/sound-journey/About/Images/music36.png'), auto; 
 }
+
 .content0{
     padding-top: 4%;
     padding-bottom: 4%;
