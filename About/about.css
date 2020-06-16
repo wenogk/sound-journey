@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Special Elite', cursive;
+    font-family: Tahoma, Geneva, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -15,7 +15,6 @@ h1 {
     margin-bottom: 50px;
     font-size: 2vw;
     max-width: 50%;
-font-family: 'Special Elite', cursive;
 }
 
 p {
@@ -24,7 +23,6 @@ p {
     padding-left: 20%;
     padding-right: 20%;
     text-align: justify;
-	font-family: 'Special Elite', cursive;
 }
 /*.navbar-brand{
   background-color:#134B5C; 
@@ -71,7 +69,6 @@ img{
   padding: 15px;  
   border-radius: 10px;  
   font-size: 18px;
-font-family: 'Special Elite', cursive;
 }
 #main{
     background-color: #134B5C;
@@ -90,7 +87,6 @@ font-family: 'Special Elite', cursive;
 }
 .thirdpage{
 	text-align: center;
-	font-family: 'Special Elite', cursive;
 
 }
 /*.pics{
@@ -102,7 +98,6 @@ font-family: 'Special Elite', cursive;
 
 .content p{
     text-align: center;
-	font-family: 'Special Elite', cursive;
 }
 
 /* code copied from w3schools */
@@ -113,7 +108,6 @@ font-family: 'Special Elite', cursive;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-	font-family: 'Special Elite', cursive;
 
   }
   
