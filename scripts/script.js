@@ -112,7 +112,7 @@ var wavesurfer = WaveSurfer.create({
     progressColor: '#343B3F',
     responsive: true
 });
-wavesurfer.load('assets/draft.mp3');
+wavesurfer.load('assets/final.mp3');
 wavesurfer.on('pause', function () {
   tl.pause();
 });
