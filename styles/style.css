@@ -1,3 +1,7 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
   /* background: url("/assets/passengers_hd.jpg");
  -webkit-background-size: cover;
