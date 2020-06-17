@@ -99,6 +99,10 @@ ease: "sine.out"
   opacity:0,
   top: "800px"
 },210)
+.to("nav", {
+  duration: 0.5,
+  opacity:1,
+},210)
 .to("#overlay", { //#727272
 duration:2,
 backgroundImage:"linear-gradient(to right, #000, #000, #000)",
