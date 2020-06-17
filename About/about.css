@@ -132,5 +132,12 @@ img{
     font-family: 'Contrail One', cursive;
   }
   .navbar-brand {
+    text-align: center;
     font-size: 30px;
+  }
+
+  .navbar-brand small {
+    text-align: center;
+    display:block;
+    font-size:16px;
   }
