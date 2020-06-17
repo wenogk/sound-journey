@@ -92,12 +92,12 @@ ease: "sine.out"
 .to(".mask1", {
   duration: 0.5,
   opacity: 0,
-  display:"none",
+  top: "800px"
 },210)
 .to(".mask2", {
   duration: 0.5,
   opacity:0,
-  display:"none",
+  top: "800px"
 },210)
 .to("#overlay", { //#727272
 duration:2,
