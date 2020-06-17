@@ -195,18 +195,27 @@ wavesurfer.on('seek', function () {
 wavesurfer.on('play', function () {
   tl.play()
 });
+function showNav() {
+  gsap.to("nav",{duration:1,opacity:1});
+}
+function hideNav() {
+  gsap.to("nav",{duration:1,opacity:0});
+}
 wavesurfer.on('ready', function () {
   $(".playPauseButton").attr("src","assets/play.png");
   $('.playPauseButton').click(function(){
     paused = !paused;
     if(paused) {
+      showNav()
       $(".playPauseButton").attr("src","assets/play.png");
     } else {
+      hideNav()
       $(".playPauseButton").attr("src","assets/pause.png");
     }
     wavesurfer.playPause();
   });
   wavesurfer.on('finish', function () {
+      showNav()
       paused = true;
       $(".playPauseButton").attr("src","assets/play.png");
     });
