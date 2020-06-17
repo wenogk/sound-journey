@@ -131,3 +131,6 @@ img{
   .navbar-brand, .nav-link, p, .planeFont {
     font-family: 'Contrail One', cursive;
   }
+  .navbar-brand {
+    font-size: 30px;
+  }

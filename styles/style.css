@@ -165,3 +165,7 @@ audio {
 .navbar-brand, .nav-link {
   font-family: 'Contrail One', cursive;
 }
+
+.navbar-brand {
+  font-size: 30px;
+}
