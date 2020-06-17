@@ -28,13 +28,14 @@ p {
   background-color:#134B5C;
 }
 */
+
 img{
     /*border: 1px solid black;*/
     width: 35%;
     height: auto;
-    padding-bottom: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
     cursor: url('https://wenogk.github.io/sound-journey/About/Images/music36.png')
   }
 

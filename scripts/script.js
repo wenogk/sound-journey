@@ -230,8 +230,10 @@ wavesurfer.on('ready', function () {
      if(e.keyCode == 32){
         paused = !paused;
         if(paused) {
+            showNav()
             $(".playPauseButton").attr("src","assets/play.png");
           } else {
+            hideNav()
             $(".playPauseButton").attr("src","assets/pause.png");
           }
          wavesurfer.playPause();
