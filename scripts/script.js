@@ -199,6 +199,8 @@ wavesurfer.on('seek', function () {
 });
 // seek
 wavesurfer.on('play', function () {
+  let time = wavesurfer.getCurrentTime();
+  tl.time(time)
   tl.play()
 });
 function showNav() {
@@ -220,11 +222,6 @@ wavesurfer.on('ready', function () {
     }
     wavesurfer.playPause();
   });
-  wavesurfer.on('finish', function () {
-      showNav()
-      paused = true;
-      $(".playPauseButton").attr("src","assets/play.png");
-    });
 
   $('body').keyup(function(e){
      if(e.keyCode == 32){
@@ -240,3 +237,9 @@ wavesurfer.on('ready', function () {
      }
   });
 });
+
+wavesurfer.on('finish', function () {
+    showNav()
+    paused = true;
+    $(".playPauseButton").attr("src","assets/play.png");
+  });
