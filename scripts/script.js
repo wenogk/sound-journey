@@ -59,12 +59,12 @@ ease: "sine.out"
 },105.4)
 .to(".mask1", {
   duration:2,
-  top:"0px",
+  top:"-15px",
   ease: Bounce.easeOut
 },108)
 .to(".mask2", {
   duration:2,
-  top:"0px",
+  top:"-15px",
   ease: Bounce.easeOut
 },108)
 .to("#overlay", { //fade to black
