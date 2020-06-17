@@ -152,6 +152,14 @@ audio {
     width: 80vw;
   }
 
+  .playerWrapper {
+    z-index:3;
+    position: absolute;
+    bottom:10%;
+    left:0;
+    right:0;
+  }
+
   .playerHolder {
     padding:5px;
     text-align: center !important;
