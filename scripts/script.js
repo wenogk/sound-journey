@@ -109,16 +109,16 @@ backgroundImage:"linear-gradient(to right, #000, #000, #000)",
 ease: "sine.out"
 },212)
 .to("#overlay", { //#727272
-duration:2,
+duration:3,
 background: "rgba(0,0,0,0)",
 ease: "sine.out"
-},217)
+},214)
 .to("body", { //#727272
-duration:2,
+duration:3,
 rotate: "0",
 transformOrigin: '50% 20%',
 ease: "sine.out"
-},217)
+},214)
 
 
 var wavesurfer = WaveSurfer.create({
