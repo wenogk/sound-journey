@@ -1,3 +1,4 @@
+$(".playPauseButton").attr("src","assets/loader.gif");
 let paused = true;
 //219 seconds total
 //32 second announcment
@@ -195,6 +196,7 @@ wavesurfer.on('play', function () {
   tl.play()
 });
 wavesurfer.on('ready', function () {
+  $(".playPauseButton").attr("src","assets/play.png");
   $('.playPauseButton').click(function(){
     paused = !paused;
     if(paused) {
