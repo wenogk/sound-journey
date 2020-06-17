@@ -116,7 +116,7 @@ ease: "sine.out"
 
 var wavesurfer = WaveSurfer.create({
     container: '#waveform',
-    waveColor: '#ccc',
+    waveColor: 'rgb(255, 255, 255,0.5)',
     progressColor: '#343B3F',
     responsive: true
 });

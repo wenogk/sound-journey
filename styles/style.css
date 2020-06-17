@@ -84,7 +84,6 @@ audio {
    align-items: center;
 }
 .playerWrapper {
-  background: white;
   z-index:3;
   position: absolute;
   bottom:0;
