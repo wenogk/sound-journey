@@ -161,3 +161,15 @@ audio {
     text-align: center !important;
   }
 }
+
+@font-face {
+  font-family: 'air_americanaregular';
+  src: url('assets/airamericana-aggg-webfont.woff2') format('woff2'),
+       url('assets/airamericana-aggg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar-brand {
+  font-family: "air_americanaregular";
+}
